@@ -1,6 +1,7 @@
 # depslib dependency file v1.0
-1589806108 source:c:\users\federico\desktop\burgosppprogi\main.c
+1589807526 source:c:\users\federico\desktop\burgosppprogi\main.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
+	<ctype.h>
 

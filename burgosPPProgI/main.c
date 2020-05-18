@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <ctype.h>
 
 struct
 {
@@ -70,10 +71,13 @@ float aplicarDescuento(float precio)
 int contarCaracteres(char* cadenaCaracteres,char caracter)
 {
     int i=0,contadorCaracter=0;
+    char auxCaracterMayus,auxCaracterMinus;
 
+    auxCaracterMayus=toupper(caracter);
+    auxCaracterMinus=tolower(caracter);
     while(cadenaCaracteres[i] != '\0')
     {
-        if(cadenaCaracteres[i]==caracter)
+        if(cadenaCaracteres[i]==auxCaracterMayus || cadenaCaracteres[i]==auxCaracterMinus)
         {
             contadorCaracter++;
         }
